@@ -1,0 +1,33 @@
+.formWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 1px solid black;
+  border-radius: 6px;
+  padding: 20px;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(176, 173, 173);
+  transition: all 250ms ease;
+  margin-bottom: 5px;
+}
+
+.error {
+  font-weight: normal;
+  color: red;
+}
+
+.button {
+  margin: auto;
+  margin-top: 15px;
+}

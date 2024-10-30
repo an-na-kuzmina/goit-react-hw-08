@@ -1,0 +1,21 @@
+.label {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+
+  margin-bottom: 15px;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid rgb(176, 173, 173);
+  transition: all 250ms ease;
+  max-width: 420px;
+}
+
+input:hover,
+input:focus {
+  border: 1px solid black;
+  cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.name {
+  font-weight: bold;
+}
+.icon {
+  margin-right: 15px;
+}
