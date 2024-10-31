@@ -6,18 +6,3 @@
   margin-bottom: 15px;
   font-size: 28px;
 }
-
-button {
-  padding: 10px;
-  border-radius: 6px;
-  font-weight: bold;
-  background-color: rgb(141, 47, 255);
-  border: 1px solid rgb(123, 122, 122);
-  transition: all 250ms ease;
-}
-
-button:hover {
-  background-color: rgb(238, 125, 242);
-  border: 1px solid black;
-  cursor: pointer;
-}

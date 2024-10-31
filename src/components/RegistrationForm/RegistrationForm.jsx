@@ -52,33 +52,57 @@ const RegistrationForm = () => {
   });
 
   return (
-    <Formik
-      initialValues={initialValues}
-      onSubmit={handleSubmit}
-      validationSchema={registerFormSchema}
-    >
-      <Form className={s.formWrapper}>
-        <label className={s.label}>
-          <span>Name</span>
-          <Field type="text" name="name" className={s.input}></Field>
-          <ErrorMessage name="name" component="span" className={s.error} />
-        </label>
-        <label className={s.label}>
-          <span>Email</span>
-          <Field type="email" name="email" className={s.input}></Field>
-          <ErrorMessage name="email" component="span" className={s.error} />
-        </label>
-        <label className={s.label}>
-          <span>Password</span>
-          <Field type="password" name="password" className={s.input}></Field>
-          <ErrorMessage name="password" component="span" className={s.error} />
-        </label>
+    <div className={s.wrapp}>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={registerFormSchema}
+      >
+        <Form className={s.form}>
+          <h2>Registration Form</h2>
+          <p>You need to register and then to work with contacts</p>
 
-        <button type="submit" className={s.button}>
-          Register
-        </button>
-      </Form>
-    </Formik>
+          <label className={s.label}>
+            <span>Name</span>
+            <Field
+              type="text"
+              name="name"
+              className={s.input}
+              placeholder="Enter name"
+            ></Field>
+            <ErrorMessage name="name" component="span" className={s.error} />
+          </label>
+          <label className={s.label}>
+            <span>Email</span>
+            <Field
+              type="email"
+              name="email"
+              className={s.input}
+              placeholder="Enter email"
+            ></Field>
+            <ErrorMessage name="email" component="span" className={s.error} />
+          </label>
+          <label className={s.label}>
+            <span>Password</span>
+            <Field
+              type="password"
+              name="password"
+              className={s.input}
+              placeholder="Enter password"
+            ></Field>
+            <ErrorMessage
+              name="password"
+              component="span"
+              className={s.error}
+            />
+          </label>
+
+          <button type="submit" className={s.button}>
+            Register
+          </button>
+        </Form>
+      </Formik>
+    </div>
   );
 };
 

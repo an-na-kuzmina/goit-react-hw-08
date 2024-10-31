@@ -36,28 +36,46 @@ const LoginForm = () => {
       .required('Password is required'),
   });
   return (
-    <Formik
-      initialValues={initialValues}
-      onSubmit={handleSubmit}
-      validationSchema={loginFormSchema}
-    >
-      <Form className={s.formWrapper}>
-        <label className={s.label}>
-          <span>Email</span>
-          <Field type="email" name="email" className={s.input}></Field>
-          <ErrorMessage name="email" component="span" className={s.error} />
-        </label>
-        <label className={s.label}>
-          <span>Password</span>
-          <Field type="password" name="password" className={s.input}></Field>
-          <ErrorMessage name="password" component="span" className={s.error} />
-        </label>
+    <div className={s.wrapp}>
+      <Formik
+        initialValues={initialValues}
+        onSubmit={handleSubmit}
+        validationSchema={loginFormSchema}
+      >
+        <Form className={s.form}>
+          <h2>Login Form</h2>
+          <p>Enter your login and password and then use contacts.</p>
+          <label className={s.label}>
+            <span>Email</span>
+            <Field
+              type="email"
+              name="email"
+              className={s.input}
+              placeholder="Enter email"
+            ></Field>
+            <ErrorMessage name="email" component="span" className={s.error} />
+          </label>
+          <label className={s.label}>
+            <span>Password</span>
+            <Field
+              type="password"
+              name="password"
+              className={s.input}
+              placeholder="Enter password"
+            ></Field>
+            <ErrorMessage
+              name="password"
+              component="span"
+              className={s.error}
+            />
+          </label>
 
-        <button type="submit" className={s.button}>
-          Log in
-        </button>
-      </Form>
-    </Formik>
+          <button type="submit" className={s.button}>
+            Log in
+          </button>
+        </Form>
+      </Formik>
+    </div>
   );
 };
 
