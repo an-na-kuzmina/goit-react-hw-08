@@ -8,9 +8,13 @@ const UserMenu = () => {
   const user = useSelector(selectUser);
 
   return (
-    <div className={s.wrapper}>
-      <p>Welcome, {user.name}</p>
-      <button type="button" onClick={() => dispatch(logout())}>
+    <div className={s.header}>
+      <p className={s.username}>Welcome, {user.name}</p>
+      <button
+        className={s.logout}
+        type="button"
+        onClick={() => dispatch(logout())}
+      >
         Logout
       </button>
     </div>

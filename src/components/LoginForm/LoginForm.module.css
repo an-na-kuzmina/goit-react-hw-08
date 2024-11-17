@@ -51,7 +51,7 @@
 }
 
 .button:hover {
-  background-color: rgb(238, 125, 242);
+  background-color: rgb(246, 243, 247);
   border: 1px solid black;
   cursor: pointer;
 }

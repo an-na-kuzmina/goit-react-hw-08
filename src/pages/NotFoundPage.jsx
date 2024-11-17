@@ -1,7 +1,7 @@
 const NotFoundPage = () => {
   return (
     <div>
-      <h2>Sorry, this page does not exist</h2>
+      <h1 className="appTitle">Sorry, this page does not exist</h1>
     </div>
   );
 };
